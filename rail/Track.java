@@ -1,3 +1,5 @@
+package rail;
+
 import java.util.Objects;
 
 public class Track {

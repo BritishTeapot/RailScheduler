@@ -1,3 +1,5 @@
+package rail;
+
 import java.util.List;
 
 class Route {
@@ -9,7 +11,7 @@ class Route {
 
     @Override
     public String toString() {
-        return "Route{" +
+        return "rail.Route{" +
                 "path=" + path +
                 '}';
     }

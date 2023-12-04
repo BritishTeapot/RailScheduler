@@ -1,3 +1,5 @@
+package rail;
+
 import java.util.Set;
 
 public class Section {
@@ -9,7 +11,7 @@ public class Section {
 
     @Override
     public String toString() {
-        return "Section{" +
+        return "rail.Section{" +
                 "tracks=" + tracks +
                 '}';
     }

@@ -1,3 +1,5 @@
+package rail;
+
 import java.util.Set;
 
 
@@ -14,7 +16,7 @@ class Schedule {
 
     @Override
     public String toString() {
-        return "Schedule{" +
+        return "rail.Schedule{" +
                 "network=" + network +
                 ", sections=" + sections +
                 ", routes=" + routes +

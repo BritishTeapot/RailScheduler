@@ -1,3 +1,5 @@
+package rail;
+
 import java.util.Map;
 import java.util.Set;
 
@@ -10,7 +12,7 @@ public class Network {
 
     @Override
     public String toString() {
-        return "Network{" +
+        return "rail.Network{" +
                 "adjacencyList=" + adjacencyList +
                 '}';
     }
