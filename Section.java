@@ -1,6 +1,6 @@
 import java.util.Set;
 
-class Section {
+public class Section {
     Set<Track> tracks;
 
     public Section(Set<Track> tracks) {
@@ -12,5 +12,9 @@ class Section {
         return "Section{" +
                 "tracks=" + tracks +
                 '}';
+    }
+
+    public boolean contains(Track track) {
+        return tracks.contains(track);
     }
 }
