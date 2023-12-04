@@ -1,16 +1,26 @@
+import java.util.Map;
 import java.util.Set;
 
-class Network {
-    Set<Track> vertices;
+public class Network {
+    Map<Track, Set<Track>> adjacencyList;
 
-    public Network(Set<Track> vertices) {
-        this.vertices = vertices;
+    public Network(Map<Track, Set<Track>> adjacencyList) {
+        this.adjacencyList = adjacencyList;
     }
 
     @Override
     public String toString() {
         return "Network{" +
-                "vertices=" + vertices +
+                "adjacencyList=" + adjacencyList +
                 '}';
+    }
+
+    public boolean contains(Track vertex) {
+        return adjacencyList.containsKey(vertex);
+    }
+
+    public boolean isConnected(Track from, Track to) {
+        Set<Track> connections = adjacencyList.get(from);
+        return connections != null && connections.contains(to);
     }
 }
