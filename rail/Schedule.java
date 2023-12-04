@@ -20,11 +20,11 @@ public class Schedule {
 
     @Override
     public String toString() {
-        return "Schedule{" +
+        return "Schedule{\n" +
                 "network=" + network +
-                ", sections=" + sections +
-                ", routes=" + routes +
-                '}';
+                ",\n sections=" + sections +
+                ",\n routes=" + routes +
+                "\n}";
     }
 
     public String getTrainPositions(int step) {
