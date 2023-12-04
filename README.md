@@ -21,4 +21,4 @@ RailScheduler is a program that calculates optimal train schedules, eliminating 
 **Definition:**  *Schedule* is a tuple (N, S, R) where N is a Network, S is a set of Sections,
 R is a set of routes, and for each two Sections s1, s2 in S their intersection is an empty set.
 
-**Definition:**  Let SC=(N, S, R) be some Schedule. Then, if for any Routes r1, r2 in R and for any natural i less or equal than the size of the smaller route(out of r1, r2) there exists such Section s in S that s contains both i-th element in r1, and i-th element in r2 path, we say that there is a *Collision between routes r1 and r2*.
+**Definition:**  Let C=(N, S, R) be some Schedule. Then, if for any Routes r1, r2 in R and for any natural i less or equal than the size of the smaller route(out of r1, r2) there exists such Section s in S that s contains both i-th element in r1, and i-th element in r2 path, we say that there is a *Collision between routes r1 and r2*.
